@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        return peso/(altura * altura);
+    }
+
+    var sexo = prompt("Qual é o seu sexo (m ou f)?");
+    var nome = prompt("Escreva o seu nome:");
+    var pesoDigitado = prompt(nome + ", qual é o seu peso?");
+    var alturaDigitada = prompt(nome + ", qual é a sua altura?");
+    var imc = Math.round(pesoDigitado/(alturaDigitada * alturaDigitada));
+
+    mostra(nome + ", o seu IMC é: " + imc);
+
+    if(sexo == "m"){
+        if(imc < 20.7){
+            mostra(nome + ", seu IMC está abaixo do desejável.");
+        }
+    
+        if(imc > 26.4){
+           mostra(nome + ", seu IMC está acima do desejável.");
+        }
+    
+        if(imc >= 20.7 && imc <= 26.4){
+            mostra("Parabéns, " + nome + "! Seu IMC está dentro da faixa desejável");
+        }
+    }
+
+    if(sexo == "f"){
+        if(imc < 19.1){
+            mostra(nome + ", seu IMC está abaixo do desejável.");
+        }
+    
+        if(imc > 25.8){
+           mostra(nome + ", seu IMC está acima do desejável.");
+        }
+    
+        if(imc >= 19.1 && imc <= 25.8){
+            mostra("Parabéns, " + nome + "! Seu IMC está dentro da faixa desejável");
+        }
+    }
+
+</script>

@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<input/>
+<br>
+<button>VERIFICAR</button>
+
+<script>
+
+    /*
+    function geraNumero(n){
+        return Math.round(Math.random() * n);
+    }
+    */
+
+    var segredos = [5, 7, 10, 2, 3];
+    var campo = document.querySelector("input");
+    campo.focus();
+
+    function verifica(){
+        for(var posicao = 0; posicao < segredos.length; posicao++){
+            if(campo.value == segredos[posicao]){
+                alert("Parabéns! Você acertou.");
+                break;
+            }
+        }
+
+        alert("Você errou!");
+
+        campo.value = "";
+        campo.focus();
+    }
+
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+    
+</script>

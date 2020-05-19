@@ -1,0 +1,28 @@
+<meta charset="UTF8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function titulo(titulo){
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var anoAtual = 2020;
+    var anoInicial = 1500;
+    var mediaIdadeQuandoTemFilhos = 28;
+    var quantidadeDeGeracoes = (anoAtual - anoInicial)/mediaIdadeQuandoTemFilhos;
+
+    titulo("Gerações Brasileiras")
+
+    mostra("No Brasil, desde a primeira geração nascida após a chegada dos portuguêses (" + anoInicial + "), nasceram " + Math.round(quantidadeDeGeracoes) + " gerações de Brasileiros.");
+
+</script>

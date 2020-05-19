@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>VERIFICAR</button>
+
+<script>
+
+var segredos = [];
+for(elementos = 0; elementos < 4; elementos++){
+    segredos.push(Math.round(Math.random() * 10));
+    console.log(segredos);
+}
+
+var entrada = document.querySelector("input");
+entrada.focus();
+
+function verifica(){
+    var achou = false;
+
+    for(var posicao = 0; posicao < entrada.length; posicao++){
+        if(entrada.value == segredos[posicao]){
+            alert("Voce acertou!");
+            achou = true;
+        }
+    }
+    entrada.value = "";
+    entrada.focus();
+}
+
+if(achou = false){
+    alert("Você ERROU!");
+}
+
+var botao = document.querySelector("button");
+botao.onclick = verifica;
+
+</script>

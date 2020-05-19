@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(numero1, numero2){
+        var resultado = numero1 + numero2;
+        return resultado;
+    }
+
+    function calculaImc(peso, altura){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcAlan = calculaImc(75, 1.73);
+    var imcLuisa = calculaImc(51, 1.56);
+
+    mostra(imcAlan);
+    mostra(imcLuisa);
+    mostra(imcAlan + imcLuisa);
+
+</script>

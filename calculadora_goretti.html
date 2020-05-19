@@ -1,0 +1,22 @@
+<meta charset="UTF8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var anfitriao = prompt("Qual é o seu nome?");
+    var convidados = parseInt(prompt(anfitriao + ", quantos convidados vão participar da festa?"));
+    var vips = parseInt(prompt(anfitriao + ", quantos VIPS estarão participando?"));
+
+    var total = convidados + vips;
+
+    mostra(anfitriao + ", no total, " + total + " pessoas comparecerão a sua festa!");
+
+</script>

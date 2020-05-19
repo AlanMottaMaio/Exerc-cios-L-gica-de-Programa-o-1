@@ -1,0 +1,27 @@
+<meta charset="UTF8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var numeroDigitado = parseInt(prompt("Digite um número para saber sua tabuada."));
+    var multiplicador = 1;
+
+    mostra("A tabuada de " + numeroDigitado + " é:<br>");
+
+    while(multiplicador <= 10){
+        mostra(numeroDigitado + " x " + multiplicador + " = " + (numeroDigitado * multiplicador));
+        multiplicador = multiplicador + 1;
+    }
+
+    mostra("<br>Aperte F5 para usar a calculadora novamente.");
+    
+</script>

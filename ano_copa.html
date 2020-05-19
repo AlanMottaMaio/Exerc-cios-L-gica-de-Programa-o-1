@@ -1,0 +1,26 @@
+<meta charset="UTF8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var quantidade = 1
+    var anoAtual = parseInt(prompt("Digite o ano atual e saiba em quais anos e quantas Copas do Mundo tivemos até hoje."))
+    
+    while(anoCopa <= anoAtual){
+    mostra("A " + quantidade + "a copa foi em " + anoCopa + ".");
+    anoCopa = anoCopa + 4;
+    quantidade = quantidade + 1;
+    }
+
+    mostra("Até agora, tivemos " + quantidade + " Copas do Mundo! A próxima será em " + anoCopa + ".");
+    
+</script>

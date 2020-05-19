@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<input/>
+<br>
+<button>VERIFICAR</button>
+
+<script>
+
+    alert("Adivinhe o número que pensei de 0 a 10!");
+
+    var segredos = [5,7,10,2,3];
+    var entrada = document.querySelector("input");
+    entrada.focus();
+
+    var achou = false;
+
+
+    function verifica(){
+        for(var posicao = 0; posicao < segredos.length; posicao++){
+            if(entrada.value == segredos[posicao]){
+                alert("Você acertou!");
+                achou = true;
+                break;
+            }
+        }
+
+        if(achou == false){
+            alert("Você ERROU!!!!");
+        }
+
+        entrada.value = "";
+        entrada.focus();
+    }
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+    
+</script>

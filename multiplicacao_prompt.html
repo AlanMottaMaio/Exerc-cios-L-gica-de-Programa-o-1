@@ -1,0 +1,23 @@
+<meta charset="UTF8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function multiplicaDoisNumeros(numero1, numero2){
+        return numero1 * numero2;
+    }
+
+    var numero1 = prompt("Digite um número:");
+    var numero2 = prompt("Digite outro número");
+
+    mostra("O resultado da mútiplicação entre " + numero1 + " e " + numero2 + " é: " + multiplicaDoisNumeros(numero1, numero2));
+    
+</script>

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var nome = prompt("Qual é o seu nome?");
+    var idade = parseInt(prompt(nome + ", qual é a sua idade?"));
+    
+
+    if(idade >= 18){
+        var temCarteira = prompt(nome + ", você possui CNH? (responda S ou N)");        
+        if(temCarteira == "S"){
+            mostra(nome + ", você está apto para dirigir. Parabéns!");
+        } else {
+            mostra(nome + ", você não pode dirigir!!!");
+        }        
+    } 
+    
+    if(idade < 18){
+        mostra(nome + ", você não pode dirigir!")
+    }
+
+
+</script>

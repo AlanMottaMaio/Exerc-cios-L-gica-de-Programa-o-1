@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>TESTAR</button>
+
+<script>
+
+    var segredos = [5,7,10,2,3];
+    var campo = document.querySelector("input");
+    campo.focus();
+
+    function verifica(){
+        var achou = 0;
+        for(var posicao = 0; posicao < segredos.length; posicao++){
+            if(campo.value == segredos[posicao]){
+                alert("Você acertou o número que está na " + (posicao + 1) +"a posição!");
+                achou = 1;
+                break;
+            }
+        }
+        if(achou == 0){
+            alert("Você ERROU!");
+        }
+        campo.value = "";
+        campo.focus();
+    }
+ 
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+
+</script>

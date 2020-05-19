@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function titulo(titulo){
+        document.write("<h1>" + titulo + "</h1>");
+    }
+
+    function pulaLinha(){
+        document.write("<br><hr><br>");        
+    }
+
+    function mostra(texto){
+        document.write("<big>" + texto + "</big>");
+        pulaLinha();
+    }
+
+    var ano = 2020;
+
+    titulo("Confira os anos dos nossos nascimentos");
+
+    mostra("Fernando nasceu em: " + (ano - 66) + ".");
+    mostra("Eu nasci em: " + (ano - 33) + ".");
+    mostra("Luísa nasceu em: " + (ano - 32) + ".");
+    mostra("Gorila nasceu em: " + (ano - 9) + ".");
+    mostra("Dorinha nasceu em: " + (ano - 7) + ".");
+
+    
+</script>

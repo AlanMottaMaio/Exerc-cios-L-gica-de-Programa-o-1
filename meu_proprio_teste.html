@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo){
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeTexto(texto){
+        document.write("<p>" + texto + "</p>");
+        pulaLinha();
+    }
+
+    function exibePopup(popup){
+        alert(popup);
+    }
+
+    exibePopup("Bem vindo!");
+    exibeTitulo("Este é o nosso título! (=");
+    exibePopup("Mais uma vez, só para testar mesmo! Hehe...");
+    exibeTexto("Nesse site testaremos um pouco mais de funções combinadas.");
+    exibeTexto("Assim, poderemos treinar o que estamos aprendendo!");
+    exibePopup("Último Popup.");
+    exibeTexto("Pois apenas dessa maneira veremos se aprendemos ou não.");
+    exibeTexto("Concorda?");
+
+</script>
